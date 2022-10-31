@@ -17,7 +17,11 @@ namespace TokenAuthenticationWebApi.Controllers
         public IHttpActionResult GetResource1()
         {
             var identity = (ClaimsIdentity)User.Identity;
-            return Ok("Hello: " + identity.Name);
+            var ClientId = identity.Claims.FirstOrDefault(c => c.Type == "ClientId").Value;
+            var ClientName = identity.Claims.FirstOrDefault(c => c.Type == "ClientName").Value;
+            var ClientSecret = identity.Claims.FirstOrDefault(c => c.Type == "ClientSecret").Value;
+
+            return Ok("Hello: " + identity.Name + ", Client Name is " + ClientName);
         }
         //This resource is only For Admin and SuperAdmin role
         [Authorize(Roles = "SuperAdmin, Admin")]
