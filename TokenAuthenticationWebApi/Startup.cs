@@ -24,9 +24,10 @@ namespace TokenAuthenticationWebApi
                 //The Path For generating the Toekn
                 TokenEndpointPath = new PathString("/token"),
                 //Setting the Token Expired Time (24 hours)
-                AccessTokenExpireTimeSpan = TimeSpan.FromDays(1),
+                AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(30),
                 //MyAuthorizationServerProvider class will validate the user credentials
-                Provider = new MyAuthorizationServerProvider()
+                Provider = new MyAuthorizationServerProvider(),
+                RefreshTokenProvider = new RefreshTokenProvider()
             };
             //Token Generations
             app.UseOAuthAuthorizationServer(options);

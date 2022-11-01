@@ -6,6 +6,8 @@
     <edmx:Diagrams>
       <Diagram DiagramId="575dec16128a490b9b89561a40e807c3" Name="Diagram1">
         <EntityTypeShape EntityType="SECURITY_DBModel.UserMaster" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SECURITY_DBModel.ClientMaster" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="SECURITY_DBModel.RefreshToken" Width="1.5" PointX="0.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

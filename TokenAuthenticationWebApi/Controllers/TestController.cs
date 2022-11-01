@@ -17,7 +17,7 @@ namespace TokenAuthenticationWebApi.Controllers
         public IHttpActionResult GetResource1()
         {
             var identity = (ClaimsIdentity)User.Identity;
-            var ClientId = identity.Claims.FirstOrDefault(c => c.Type == "ClientId").Value;
+            var ClientId = identity.Claims.FirstOrDefault(c => c.Type == "ClientID").Value;
             var ClientName = identity.Claims.FirstOrDefault(c => c.Type == "ClientName").Value;
             var ClientSecret = identity.Claims.FirstOrDefault(c => c.Type == "ClientSecret").Value;
 

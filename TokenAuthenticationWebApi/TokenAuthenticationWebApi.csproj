@@ -189,26 +189,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ClientMaster.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ClientMaster.Context.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\AuthenticationRepository.cs" />
     <Compile Include="Models\ClientMaster.cs">
-      <DependentUpon>ClientMaster.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ClientMaster.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ClientMaster.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ClientMaster1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ClientMaster.tt</DependentUpon>
+      <DependentUpon>UserMaster.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ClientMasterRepository.cs" />
+    <Compile Include="Models\Helper.cs" />
     <Compile Include="Models\MyAuthorizationServerProvider.cs" />
+    <Compile Include="Models\RefreshToken.cs">
+      <DependentUpon>UserMaster.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RefreshTokenProvider.cs" />
     <Compile Include="Models\UserMaster.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -240,16 +231,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\ClientMaster.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ClientMaster.edmx</DependentUpon>
-      <LastGenOutput>ClientMaster.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\ClientMaster.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ClientMaster.edmx</DependentUpon>
-      <LastGenOutput>ClientMaster1.cs</LastGenOutput>
-    </Content>
     <Content Include="Models\UserMaster.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>UserMaster.edmx</DependentUpon>
@@ -287,13 +268,6 @@
     </EntityDeploy>
     <Content Include="Models\UserMaster.edmx.diagram">
       <DependentUpon>UserMaster.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Models\ClientMaster.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ClientMaster.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\ClientMaster.edmx.diagram">
-      <DependentUpon>ClientMaster.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

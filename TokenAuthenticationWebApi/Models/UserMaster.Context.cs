@@ -26,5 +26,7 @@ namespace TokenAuthenticationWebApi.Models
         }
     
         public virtual DbSet<UserMaster> UserMasters { get; set; }
+        public virtual DbSet<ClientMaster> ClientMasters { get; set; }
+        public virtual DbSet<RefreshToken> RefreshTokens { get; set; }
     }
 }
