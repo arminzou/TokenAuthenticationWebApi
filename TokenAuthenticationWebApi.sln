@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenAuthenticationWebApi", "TokenAuthenticationWebApi\TokenAuthenticationWebApi.csproj", "{FE3FBFE6-C1B5-447E-8A49-8757170F753D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefreshTokenClient1", "RefreshTokenClient1\RefreshTokenClient1.csproj", "{77095FE9-D78F-4653-8C7A-12C4D0CC2AA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FE3FBFE6-C1B5-447E-8A49-8757170F753D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE3FBFE6-C1B5-447E-8A49-8757170F753D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE3FBFE6-C1B5-447E-8A49-8757170F753D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77095FE9-D78F-4653-8C7A-12C4D0CC2AA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77095FE9-D78F-4653-8C7A-12C4D0CC2AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77095FE9-D78F-4653-8C7A-12C4D0CC2AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77095FE9-D78F-4653-8C7A-12C4D0CC2AA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
